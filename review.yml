@@ -1,0 +1,110 @@
+aid: first-horizon
+name: First Horizon
+review:
+  question: >-
+    Does First Horizon publish a real first-party developer API surface, and
+    what is its auth model, spec availability, and open-finance posture?
+  answer: true
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    First Horizon operates a genuine first-party API Banking developer portal
+    aimed at Treasury Management (corporate/commercial) clients, not a broad
+    public/self-serve developer program. The portal documents a small family of
+    RESTful products — Move Money Transfer, ACH Origination (with an ACH
+    Tokenization Solution for NACHA compliance), real-time Account Information
+    (balances + transactions), and ABA/BIC routing lookups — with a sandbox for
+    build-and-test against a live customer environment. Access is
+    partner/relationship gated (not open sign-up).
+  developerPortal:
+    url: https://developers-test.firsthorizon.com/
+    reachableFromReview: false
+    note: >-
+      The portal host (208.65.41.185) refused HTTPS connections / timed out
+      from the review environment (likely WAF or geo/edge restriction). Product
+      and endpoint facts below were confirmed from indexed portal pages via web
+      search and the firsthorizon.com API Banking Solutions marketing page, not
+      by direct crawl.
+  documentedApis:
+  - name: Move Money Transfer v1
+    url: https://developers-test.firsthorizon.com/apis/v1/movemoney/transfer
+  - name: ACH Origination / ACH Tokenization Solution
+    url: https://developers-test.firsthorizon.com/solutions/ach-tokenization
+  - name: Account Information (balances + transactions, real-time)
+    url: https://developers-test.firsthorizon.com/get-started
+  - name: ABA Lookup v1
+    url: https://developers-test.firsthorizon.com/apis/v1/lookups/aba
+  - name: BIC Lookup v1
+    url: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
+  authModel:
+    scheme: OAuth2
+    documented: true
+    url: https://developers-test.firsthorizon.com/apis/v0/oauth
+    note: >-
+      OAuth 2.0 authorization is documented for the API Banking platform. No
+      details on mTLS or FAPI conformance were confirmable from indexed pages.
+  specProvenance:
+    openApiDownloadable: false
+    postmanDownloadable: false
+    harvested: 0
+    note: >-
+      No public OpenAPI/Swagger or Postman collection was found or downloadable.
+      Portal reference is HTML-only and gated; the portal host was unreachable
+      from the review environment. No specs were fabricated. All apis[] entries
+      are listed humanURL-only with a Documentation + Authentication pointer.
+  openFinancePosture:
+    fdxParticipation: unconfirmed
+    cfpb1033Posture: unconfirmed
+    aggregatorAccess:
+      available: true
+      note: >-
+        Third-party aggregators cover First Horizon for consumer account data —
+        Plaid connectivity is documented by fintable.io coverage for "First
+        Horizon Bank - Digital Banking". OpenBankingTracker lists no direct
+        First Horizon developer resources and points to aggregator access
+        (Plaid/Tink/TrueLayer) for programmatic connectivity.
+    note: >-
+      US open finance is voluntary/fragmented. First Horizon's first-party
+      program is a corporate Treasury API Banking offering; consumer-permissioned
+      data access is available via aggregators rather than a documented public
+      FDX/1033 endpoint.
+sources:
+- url: https://www.firsthorizon.com/Corporate/Products-and-Services/Treasury-Management/API-Banking-Solutions
+  type: ProductPage
+  note: Marketing page for API Banking Solutions — describes ACH origination, real-time account information, and the developer portal.
+- url: https://developers-test.firsthorizon.com/get-started
+  type: Documentation
+  note: Get Started / Home of the API Banking developer portal (indexed; host unreachable at review time).
+- url: https://developers-test.firsthorizon.com/apis/v0/oauth
+  type: Authentication
+  note: OAuth 2.0 documentation for the platform.
+- url: https://developers-test.firsthorizon.com/apis/v1/movemoney/transfer
+  type: Documentation
+  note: Move Money Transfer v1 endpoint documentation.
+- url: https://developers-test.firsthorizon.com/apis/v1/lookups/aba
+  type: Documentation
+  note: ABA Lookup v1 endpoint documentation.
+- url: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
+  type: Documentation
+  note: BIC Lookup v1 endpoint documentation.
+- url: https://developers-test.firsthorizon.com/solutions/ach-tokenization
+  type: Documentation
+  note: ACH Tokenization Solution page.
+- url: https://www.openbankingtracker.com/provider/first-horizon/apis
+  type: Reference
+  note: Lists no direct developer resources; points to aggregator access.
+- url: https://fintable.io/coverage/banks/United%20States/22620_first-horizon-bank-digital-banking
+  type: Reference
+  note: Documents Plaid aggregator coverage for First Horizon Bank Digital Banking.
+actions:
+  apisYmlUpdated: true
+  apisBefore: 0
+  apisAfter: 5
+  specsHarvested: 0
+  reason: >-
+    Deepened from an empty apis[] to 5 real documented API Banking products,
+    each humanURL-only with Documentation + Authentication (OAuth2) pointers,
+    plus verified common[] links (developer portal, docs, product page, OAuth).
+    No specs harvested because none are publicly downloadable and the portal
+    host was unreachable — represented honestly rather than fabricated.

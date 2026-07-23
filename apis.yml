@@ -1,37 +1,180 @@
 aid: first-horizon
 name: First Horizon
-description: >-
-  First Horizon Corporation is a Fortune 500 financial services holding
-  company headquartered in Memphis, Tennessee. Through its banking
-  subsidiary, First Horizon Bank, the company provides commercial, private,
-  consumer, and mortgage banking, wealth management, and capital markets
-  services across the southern United States. This repository captures any
-  APIs, developer tools, and machine-readable API artifacts associated with
-  First Horizon. No public developer APIs or documentation portal have been
-  identified at this time.
+kind: company
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+description: >-
+  First Horizon Corporation is a Fortune 500 financial services holding company
+  headquartered in Memphis, Tennessee. Through First Horizon Bank it provides
+  commercial, private, consumer, and mortgage banking, wealth management, and
+  capital markets services across the southern United States. First Horizon
+  operates a real API Banking developer portal for Treasury Management clients,
+  exposing RESTful products for money movement, ACH origination, real-time
+  account information, and routing-number lookups, secured with OAuth 2.0 and a
+  sandbox for build-and-test integration. Onboarding is partner/relationship
+  gated and no OpenAPI/Swagger specifications are publicly downloadable — this
+  repository captures the documented API surface honestly, humanURL-only.
+accessModel:
+  pricing: unknown
+  onboarding: partner
+  trial: false
+  try_now: false
+  public: false
+  label: Partner onboarding · Treasury API Banking (sandbox + OAuth2)
+  confidence: medium
+  source:
+  - developer-portal
+  generated: '2026-07-23'
+  method: researched
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/first-horizon.png
 access: 3rd-Party
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-07-23'
 position: Consumer
 tags:
-  - Fortune 500
-  - Banking
-  - Financial Services
-  - Wealth Management
-  - Capital Markets
+- United States
+- Banking
+- Financial Services
+- Treasury Management
+- API Banking
+- ACH
+- Payments
+- Open Banking
+- Super-Regional Bank
+- Fortune 500
+- Wealth Management
+- Capital Markets
 url: >-
   https://raw.githubusercontent.com/api-evangelist/first-horizon/refs/heads/main/apis.yml
 specificationVersion: '0.19'
-apis: []
+apis:
+- aid: first-horizon:move-money-transfer-v1
+  name: Move Money Transfer v1
+  description: >-
+    Move Money Transfer is First Horizon's RESTful payments-initiation API for
+    Treasury Management clients, used to originate and manage funds transfers
+    programmatically from an ERP, accounting, or treasury platform. Requests are
+    authorized with OAuth 2.0 access tokens and can be exercised in the portal
+    sandbox before promotion to a live customer environment. No public OpenAPI
+    specification is downloadable; the endpoint is documented in HTML on the API
+    Banking developer portal.
+  humanURL: https://developers-test.firsthorizon.com/apis/v1/movemoney/transfer
+  tags:
+  - Payments
+  - Money Movement
+  - Treasury Management
+  - United States
+  properties:
+  - type: Documentation
+    url: https://developers-test.firsthorizon.com/apis/v1/movemoney/transfer
+  - type: Authentication
+    url: https://developers-test.firsthorizon.com/apis/v0/oauth
+  - type: DeveloperPortal
+    url: https://developers-test.firsthorizon.com/
+- aid: first-horizon:ach-origination
+  name: ACH Origination
+  description: >-
+    The ACH Origination API lets First Horizon Treasury Management clients
+    originate ACH transactions directly from their ERP or accounting system via
+    a RESTful interface, paired with an ACH Tokenization Solution that replaces
+    sensitive bank account numbers with tokens to support security and NACHA
+    compliance. Authorized with OAuth 2.0 and available in a sandbox for
+    build-and-test. Documented in HTML on the developer portal; no public
+    OpenAPI specification is downloadable.
+  humanURL: https://developers-test.firsthorizon.com/solutions/ach-tokenization
+  tags:
+  - ACH
+  - Payments
+  - Tokenization
+  - NACHA
+  - United States
+  properties:
+  - type: Documentation
+    url: https://developers-test.firsthorizon.com/solutions/ach-tokenization
+  - type: Authentication
+    url: https://developers-test.firsthorizon.com/apis/v0/oauth
+  - type: DeveloperPortal
+    url: https://developers-test.firsthorizon.com/
+- aid: first-horizon:account-information
+  name: Account Information
+  description: >-
+    The Account Information API provides Treasury Management clients real-time
+    visibility into account information, balances, and transactions through a
+    RESTful interface, for reconciliation and cash-position workflows inside a
+    client's own platform. Authorized with OAuth 2.0 and exercisable in the
+    portal sandbox. Documented in HTML on the API Banking developer portal; no
+    public OpenAPI specification is downloadable.
+  humanURL: https://developers-test.firsthorizon.com/get-started
+  tags:
+  - Account Information
+  - Balances
+  - Transactions
+  - Open Banking
+  - United States
+  properties:
+  - type: Documentation
+    url: https://developers-test.firsthorizon.com/get-started
+  - type: Authentication
+    url: https://developers-test.firsthorizon.com/apis/v0/oauth
+  - type: DeveloperPortal
+    url: https://developers-test.firsthorizon.com/
+- aid: first-horizon:aba-lookup-v1
+  name: ABA Lookup v1
+  description: >-
+    ABA Lookup is a RESTful utility endpoint on First Horizon's API Banking
+    platform that validates and resolves U.S. ABA routing transit numbers,
+    supporting payment-instruction validation ahead of ACH and wire origination.
+    Authorized with OAuth 2.0. Documented in HTML on the developer portal; no
+    public OpenAPI specification is downloadable.
+  humanURL: https://developers-test.firsthorizon.com/apis/v1/lookups/aba
+  tags:
+  - Lookups
+  - Routing Numbers
+  - Payments
+  - United States
+  properties:
+  - type: Documentation
+    url: https://developers-test.firsthorizon.com/apis/v1/lookups/aba
+  - type: Authentication
+    url: https://developers-test.firsthorizon.com/apis/v0/oauth
+  - type: DeveloperPortal
+    url: https://developers-test.firsthorizon.com/
+- aid: first-horizon:bic-lookup-v1
+  name: BIC Lookup v1
+  description: >-
+    BIC Lookup is a RESTful utility endpoint on First Horizon's API Banking
+    platform that validates and resolves SWIFT/BIC codes, supporting the
+    validation of international payment instructions. Authorized with OAuth 2.0.
+    Documented in HTML on the developer portal; no public OpenAPI specification
+    is downloadable.
+  humanURL: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
+  tags:
+  - Lookups
+  - SWIFT
+  - BIC
+  - International Payments
+  - United States
+  properties:
+  - type: Documentation
+    url: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
+  - type: Authentication
+    url: https://developers-test.firsthorizon.com/apis/v0/oauth
+  - type: DeveloperPortal
+    url: https://developers-test.firsthorizon.com/
 common:
-  - type: DomainSecurity
-    url: security/first-horizon-domain-security.yml
-  - type: Website
-    url: https://www.firsthorizon.com
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/first-horizon-bank
+- type: DomainSecurity
+  url: security/first-horizon-domain-security.yml
+- type: Website
+  url: https://www.firsthorizon.com
+- type: DeveloperPortal
+  url: https://developers-test.firsthorizon.com/
+- type: Documentation
+  url: https://developers-test.firsthorizon.com/get-started
+- type: ProductPage
+  url: https://www.firsthorizon.com/Corporate/Products-and-Services/Treasury-Management/API-Banking-Solutions
+- type: Authentication
+  url: https://developers-test.firsthorizon.com/apis/v0/oauth
+- type: LinkedIn
+  url: https://www.linkedin.com/company/first-horizon-bank
 maintainers:
-  - FN: API Evangelist
-    url: https://apievangelist.com
+- FN: API Evangelist
+  url: https://apievangelist.com
