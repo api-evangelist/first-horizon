@@ -1,0 +1,31 @@
+# First Horizon — API Banking
+
+> First Horizon Bank operates an API Banking developer portal for Treasury Management clients,
+> exposing RESTful products for money movement, ACH origination, real-time account information,
+> and routing-number/BIC lookups. APIs are secured with OAuth 2.0 and exercisable in a sandbox
+> before promotion to a live customer environment. Onboarding is partner/relationship gated and
+> no public OpenAPI/Swagger specification is downloadable; endpoints are documented in HTML on
+> the developer portal.
+
+## APIs
+
+- [Move Money Transfer v1](https://developers-test.firsthorizon.com/apis/v1/movemoney/transfer): RESTful payments-initiation API to originate and manage funds transfers programmatically, authorized with OAuth 2.0.
+- [ACH Origination](https://developers-test.firsthorizon.com/solutions/ach-tokenization): Originate ACH transactions from an ERP/accounting system, paired with an ACH Tokenization Solution supporting NACHA compliance.
+- [Account Information](https://developers-test.firsthorizon.com/get-started): Real-time visibility into account information, balances, and transactions for reconciliation and cash-position workflows.
+- [ABA Lookup v1](https://developers-test.firsthorizon.com/apis/v1/lookups/aba): Validate and resolve U.S. ABA routing transit numbers ahead of ACH and wire origination.
+- [BIC Lookup v1](https://developers-test.firsthorizon.com/apis/v1/lookups/bic): Validate and resolve SWIFT/BIC codes for international payment instructions.
+
+## Authentication
+
+- [OAuth 2.0](https://developers-test.firsthorizon.com/apis/v0/oauth): All API Banking endpoints are authorized with OAuth 2.0 access tokens.
+
+## Docs
+
+- [Developer Portal](https://developers-test.firsthorizon.com/): API Banking developer portal home.
+- [Get Started](https://developers-test.firsthorizon.com/get-started): Onboarding and build-and-test guidance.
+- [API Banking Solutions](https://www.firsthorizon.com/Corporate/Products-and-Services/Treasury-Management/API-Banking-Solutions): Product overview on firsthorizon.com.
+
+## Notes
+
+- Onboarding is partner/relationship gated (no self-serve signup); access is via First Horizon Treasury Management Services.
+- No public OpenAPI/Swagger, GraphQL, or MCP surface is published; this profile is humanURL-only.

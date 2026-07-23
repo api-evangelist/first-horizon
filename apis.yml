@@ -175,6 +175,13 @@ common:
   url: https://developers-test.firsthorizon.com/apis/v0/oauth
 - type: LinkedIn
   url: https://www.linkedin.com/company/first-horizon-bank
+- type: Authentication
+  url: authentication/first-horizon-authentication.yml
+- type: Conformance
+  url: conformance/first-horizon-conformance.yml
+- type: LLMsTxt
+  url: llms/first-horizon-llms.txt
 maintainers:
 - FN: API Evangelist
+  email: kin@apievangelist.com
   url: https://apievangelist.com

@@ -1,0 +1,32 @@
+generated: '2026-07-23'
+method: searched
+source: https://developers-test.firsthorizon.com/apis/v0/oauth
+docs: https://developers-test.firsthorizon.com/apis/v0/oauth
+note: >-
+  No public OpenAPI is downloadable, so the securityScheme could not be derived
+  mechanically. First Horizon's API Banking developer portal documents that all
+  API Banking endpoints are authorized with OAuth 2.0 access tokens. The specific
+  grant/flow, authorization and token URLs, and scope names are behind
+  partner/relationship-gated onboarding and are not published anonymously; they
+  are recorded here as unspecified rather than fabricated.
+summary:
+  types:
+  - oauth2
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+- name: OAuth2
+  type: oauth2
+  documented: true
+  flows: []
+  authorization_url: null
+  token_url: null
+  scopes: []
+  applies_to:
+  - Move Money Transfer v1
+  - ACH Origination
+  - Account Information
+  - ABA Lookup v1
+  - BIC Lookup v1
+  sources:
+  - https://developers-test.firsthorizon.com/apis/v0/oauth

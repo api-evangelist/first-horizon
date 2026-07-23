@@ -1,0 +1,29 @@
+generated: '2026-07-23'
+method: searched
+source: >-
+  First Horizon API Banking developer portal + apis.yml documented API surface
+note: >-
+  Derived/searched from the provider's documented API surface (no public OpenAPI
+  to introspect). Only standards with explicit documented evidence are asserted
+  as conforming; everything else is left false rather than assumed.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    API Banking developer portal documents OAuth 2.0 access-token authorization
+    for all endpoints (https://developers-test.firsthorizon.com/apis/v0/oauth)
+- id: nacha
+  conforms: true
+  evidence: >-
+    ACH Origination is paired with an ACH Tokenization Solution documented to
+    support NACHA compliance for ACH origination
+- id: oidc
+  conforms: false
+- id: fapi
+  conforms: false
+- id: psd2
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+- id: json-api
+  conforms: false
