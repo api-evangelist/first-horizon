@@ -13,6 +13,17 @@ description: >-
   sandbox for build-and-test integration. Onboarding is partner/relationship
   gated and no OpenAPI/Swagger specifications are publicly downloadable — this
   repository captures the documented API surface honestly, humanURL-only.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-11'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: partner
