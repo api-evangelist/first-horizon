@@ -44,6 +44,19 @@ position: Consumer
 tags:
 - United States
 - Banking
+- Financial-Services
+- Treasury Management
+- API Banking
+- ACH
+- Payments
+- Open Banking
+- Super-Regional Bank
+- Fortune 500
+- Wealth Management
+- Capital Markets
+tags_raw:
+- United States
+- Banking
 - Financial Services
 - Treasury Management
 - API Banking
@@ -118,6 +131,12 @@ apis:
   tags:
   - Account Information
   - Balances
+  - Transaction
+  - Open Banking
+  - United States
+  tags_raw:
+  - Account Information
+  - Balances
   - Transactions
   - Open Banking
   - United States
@@ -159,6 +178,12 @@ apis:
     is downloadable.
   humanURL: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
   tags:
+  - Lookups
+  - Swift
+  - BIC
+  - International Payments
+  - United States
+  tags_raw:
   - Lookups
   - SWIFT
   - BIC
