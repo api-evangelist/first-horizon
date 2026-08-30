@@ -179,7 +179,7 @@ apis:
   humanURL: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
   tags:
   - Lookups
-  - Swift
+  - SWIFT
   - BIC
   - International Payments
   - United States
