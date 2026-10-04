@@ -44,7 +44,7 @@ position: Consuming
 tags:
 - United States
 - Banking
-- Financial-Services
+- Financial Services
 - Treasury Management
 - API Banking
 - ACH
@@ -67,6 +67,7 @@ tags_raw:
 - Fortune 500
 - Wealth Management
 - Capital Markets
+- Financial-Services
 url: >-
   https://raw.githubusercontent.com/api-evangelist/first-horizon/refs/heads/main/apis.yml
 specificationVersion: '0.23'
@@ -179,7 +180,7 @@ apis:
   humanURL: https://developers-test.firsthorizon.com/apis/v1/lookups/bic
   tags:
   - Lookups
-  - Swift
+  - SWIFT
   - BIC
   - International Payments
   - United States
