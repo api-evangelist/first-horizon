@@ -1,4 +1,4 @@
-# first-horizon
+# First Horizon
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Profile for First Horizon in the API Evangelist network. Fortune 2024 (rank 640).
+First Horizon Corporation is a Fortune 500 financial services holding company headquartered in Memphis, Tennessee. Through First Horizon Bank it provides commercial, private, consumer, and mortgage banking, wealth management, and capital markets services across the southern United States. First Horizon operates a real API Banking developer portal for Treasury Management clients, exposing RESTful products for money movement, ACH origination, real-time account information, and routing-number lookups, secured with OAuth 2.0 and a sandbox for build-and-test integration. Onboarding is partner/relationship gated and no OpenAPI/Swagger specifications are publicly downloadable — this repository captures the documented API surface honestly, humanURL-only.
+
+**Areas:** United States · Banking · Financial Services · Treasury Management · API Banking · ACH · Payments · Open Banking · Super-Regional Bank · Fortune 500 · Wealth Management · Capital Markets
+
+## First Horizon on APIs.io
+
+Everything profiled for First Horizon is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/first-horizon/](https://apis.io/providers/first-horizon/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Move Money Transfer v1](https://apis.io/apis/first-horizon/move-money-transfer-v1/) — Move Money Transfer is First Horizon's RESTful payments-initiation API for Treasury Management clients, used to originate and manage funds transfers…
+- [ACH Origination](https://apis.io/apis/first-horizon/ach-origination/) — The ACH Origination API lets First Horizon Treasury Management clients originate ACH transactions directly from their ERP or accounting system via a RESTful…
+- [Account Information](https://apis.io/apis/first-horizon/account-information/) — The Account Information API provides Treasury Management clients real-time visibility into account information, balances, and transactions through a RESTful…
+- [ABA Lookup v1](https://apis.io/apis/first-horizon/aba-lookup-v1/) — ABA Lookup is a RESTful utility endpoint on First Horizon's API Banking platform that validates and resolves U.S. ABA routing transit numbers, supporting…
+- [BIC Lookup v1](https://apis.io/apis/first-horizon/bic-lookup-v1/) — BIC Lookup is a RESTful utility endpoint on First Horizon's API Banking platform that validates and resolves SWIFT/BIC codes, supporting the validation of…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [First Horizon Authentication](https://apis.io/security/first-horizon/first-horizon-authentication/)
+- [First Horizon Domain Security](https://apis.io/security/first-horizon/first-horizon-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.firsthorizon.com)
+- [Documentation](https://developers-test.firsthorizon.com/get-started)
+- [GitHub](https://github.com/First-horizon)
+
+## API Evangelist rating
+
+**Kin Score 11.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 70.5 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 15.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/first-horizon/](https://apis.io/providers/first-horizon/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for First Horizon: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/first-horizon/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
